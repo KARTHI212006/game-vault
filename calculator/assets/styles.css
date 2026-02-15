@@ -1,0 +1,18 @@
+:root{
+  --bg:#0f1724;
+  --panel:#111827;
+  --accent:#06b6d4;
+  --muted:#9ca3af;
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif}
+body{background:linear-gradient(180deg,#071021, #061425);min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;padding:24px}
+.calculator{background:var(--panel);color:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.6);width:320px}
+.calculator h1{margin:0 0 12px 0;font-size:20px;text-align:center;color:var(--accent)}
+.display-area{background:#0b1220;border-radius:8px;padding:10px;margin-bottom:12px}
+#display{width:100%;background:transparent;border:0;color:#fff;font-size:28px;padding:8px;text-align:right}
+.buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.buttons button{background:#0f1724;color:#e6eef6;border:0;padding:14px;border-radius:8px;font-size:16px;cursor:pointer;box-shadow:inset 0 -2px 0 rgba(0,0,0,.25)}
+.buttons button:active{transform:translateY(1px)}
+.buttons .wide{grid-column:span 2}
+.buttons button[data-action="equals"]{background:var(--accent);color:#062024;font-weight:700}
+.buttons button[data-action="clear"]{background:#ef4444}
